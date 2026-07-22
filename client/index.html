@@ -1,16 +1,52 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>Artwork Portfolio</title>    
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  </head>
+<head>
+  <!-- TODO: replace https://www.volodymyrpivenart.com with your real production domain
+       everywhere it appears below (canonical, og:url, og:image, twitter:image, JSON-LD),
+       and in client/src/hooks/useSEO.ts (SITE_URL) and public/sitemap.xml / robots.txt. -->
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+  <title>Volodymyr Piven — Original Oil Paintings</title>
+  <meta name="description" content="Original oil paintings by Volodymyr Piven. Browse landscapes, seascapes, and figurative works, read about the artist's journey, and get in touch about commissions and exhibitions." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.volodymyrpivenart.com/" />
+  <link rel="icon" type="image/png" href="/images/logo.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Volodymyr Piven — Original Paintings" />
+  <meta property="og:title" content="Volodymyr Piven — Original Oil Paintings" />
+  <meta property="og:description" content="Original oil paintings by Volodymyr Piven. Browse landscapes, seascapes, and figurative works, read about the artist's journey, and get in touch about commissions and exhibitions." />
+  <meta property="og:image" content="https://www.volodymyrpivenart.com/images/logo.png" />
+  <meta property="og:url" content="https://www.volodymyrpivenart.com/" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Volodymyr Piven — Original Oil Paintings" />
+  <meta name="twitter:description" content="Original oil paintings by Volodymyr Piven. Browse landscapes, seascapes, and figurative works, and get in touch about commissions and exhibitions." />
+  <meta name="twitter:image" content="https://www.volodymyrpivenart.com/images/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Volodymyr Piven",
+      "alternateName": ["Володимир Півень", "Владимир Пивень"],
+      "jobTitle": ["Painter", "Художник"],
+      "url": "https://www.volodymyrpivenart.com/",
+      "image": "https://www.volodymyrpivenart.com/images/logo.png",
+      "sameAs": []
+    }
+  </script>
+</head>
 
   <body>
     <div id="root"></div>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  TODO: update the domain below to your real production domain,
+  and add a new <url> entry each time you publish a new blog post
+  (e.g. https://www.volodymyrpivenart.com/blog/<post-id>).
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://www.volodymyrpivenart.com/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.volodymyrpivenart.com/about</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.volodymyrpivenart.com/blog</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.volodymyrpivenart.com/blog/Welcome</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.volodymyrpivenart.com/contact</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+</urlset><?xml version="1.0" encoding="UTF-8"?>
+        <!--
+          TODO: update the domain below to your real production domain,
+          and add a new <url> entry each time you publish a new blog post
+          (e.g. https://www.volodymyrpivenart.com/blog/<post-id>).
+        -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+    <loc>https://www.volodymyrpivenart.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+</url>
+<url>
+    <loc>https://www.volodymyrpivenart.com/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://www.volodymyrpivenart.com/blog</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://www.volodymyrpivenart.com/blog/Welcome</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+</url>
+<url>
+    <loc>https://www.volodymyrpivenart.com/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+</url>
+</urlset>

@@ -7,8 +7,14 @@ import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
 import { Palette, Brush, Eye, ChevronRight } from "lucide-react";
 import { Link } from "wouter";
+import { useSEO } from "@/hooks/useSEO";
 
 export default function About() {
+  useSEO({
+    title: "About the Artist",
+    description: "Learn about painter Volodymyr Piven's journey — from art school in Kharkiv to exhibitions and a career spanning decades of oil painting.",
+    path: "/about",
+  });
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -259,7 +265,7 @@ export default function About() {
                   { year: "2013", title: "Artist in Riverside Art and Glass Gallery", venue: "Wroxham, Norfolk, UK", color: "border-l-blue-electric" },
                   { year: "2011", title: "Dew", venue: "Prague, Czech Republic", color: "border-l-crimson" },
                   { year: "2010", title: "Dew", venue: "Bratislava, Slovakia", color: "border-l-golden" },
-                  { year: "2009", title: "Field bouquet", venue: "Budva, Montenegro", color: "border-l-blue-electric" },
+                  { year: "2009", title: "Field Bouquet", venue: "Budva, Montenegro", color: "border-l-blue-electric" },
                 ].map((ex, index) => (
                   <div
                     key={index}

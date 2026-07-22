@@ -4,7 +4,7 @@
  * Key changes: offset grid, colored section bands, painterly card frames
  */
 
-
+import { useSEO } from "@/hooks/useSEO";
 import { useState, useEffect, startTransition } from "react";
 import { useRoute, useLocation } from "wouter";
 import { Navbar } from "@/components/Navbar";
@@ -66,13 +66,22 @@ export default function Home() {
     }
   }, [params?.id, filteredArtworks]);
 
-  useEffect(() => {
-    if (lightboxIndex !== null && filteredArtworks[lightboxIndex]) {
-      document.title = `${filteredArtworks[lightboxIndex].title} — Volodymyr Piven`;
-    } else {
-      document.title = "Volodymyr Piven — Original Paintings";
-    }
-  }, [lightboxIndex, filteredArtworks]);
+  const lightboxArtwork = lightboxIndex !== null ? filteredArtworks[lightboxIndex] : null;
+
+  useSEO(
+    lightboxArtwork
+      ? {
+        title: lightboxArtwork.title,
+        description: `${lightboxArtwork.title} — ${lightboxArtwork.medium}, ${lightboxArtwork.year}. An original painting by Volodymyr Piven.`,
+        image: lightboxArtwork.imageUrl,
+        path: `/gallery/${lightboxArtwork.id}`,
+      }
+      : {
+        title: "Original Oil Paintings",
+        description: "Browse original oil paintings by Volodymyr Piven — landscapes, seascapes, and figurative works exploring color and emotion.",
+        path: "/",
+      }
+  );
 
   const openLightbox = (index: number) => {
     const artwork = filteredArtworks[index];

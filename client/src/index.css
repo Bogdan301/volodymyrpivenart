@@ -50,7 +50,7 @@ html, body {
   --color-crimson: oklch(0.58 0.23 25);
   --color-blue-electric: oklch(0.65 0.13 245);
   --color-golden: oklch(0.78 0.18 75);
-  --color-charcoal: oklch(0.22 0.02 270);
+  --color-charcoal: #171a24;
   --color-cream: oklch(0.97 0.005 80);
 
   /* Custom animations */

@@ -2,6 +2,7 @@
  * Design: Chromatic Bloom — Abstract Expressionist Web Design
  * Blog page: Expressive page opener, gallery-style blog cards with colored accents
  */
+import { useSEO } from "@/hooks/useSEO";
 import { useState, startTransition } from "react";
 import { useRoute } from "wouter";
 import { Navbar } from "@/components/Navbar";
@@ -39,6 +40,11 @@ function NotFound() {
 }
 
 function BlogList() {
+  useSEO({
+    title: "Blog",
+    description: "Stories from the studio — updates on new paintings, exhibitions, and the creative process behind the work of Volodymyr Piven.",
+    path: "/blog",
+  });
   const [currentPage, setCurrentPage] = useState(1);
   const totalPages = Math.max(1, Math.ceil(blogPosts.length / POSTS_PER_PAGE));
   const paginatedPosts = blogPosts.slice(
@@ -163,6 +169,12 @@ function BlogList() {
 }
 
 function BlogPostDetail({ post }: { post: typeof blogPosts[0] }) {
+  useSEO({
+    title: post.title,
+    description: post.excerpt,
+    image: post.image,
+    path: `/blog/${post.id}`,
+  });
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
