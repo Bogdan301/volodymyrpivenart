@@ -8,6 +8,7 @@
     "dev:api": "cross-env PORT=3002 tsx server/index.ts",
     "build": "vite build && tsx scripts/prerender.ts && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
     "start": "cross-env NODE_ENV=production node dist/index.js",
+    "postinstall": "npx puppeteer browsers install chrome",
     "preview": "vite preview --host",
     "check": "tsc --noEmit",
     "format": "prettier --write ."
