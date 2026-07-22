@@ -14,7 +14,8 @@ import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
 import { mkdirSync, writeFileSync } from "fs";
-import puppeteer from "puppeteer";
+import puppeteer from "puppeteer-core";
+import chromium from "@sparticuz/chromium";
 import { artworks, blogPosts } from "../client/src/data/artworks";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -40,9 +41,17 @@ async function main() {
   });
   const server = app.listen(PORT);
 
-  const browser = await puppeteer.launch({
-    headless: true,
-  });
+  const browser = await puppeteer.launch(
+    process.env.VERCEL
+      ? {
+        args: chromium.args,
+        executablePath: await chromium.executablePath(),
+        headless: true,
+      }
+      : {
+        headless: true,
+      }
+  );
   const page = await browser.newPage();
 
   for (const route of routes) {
