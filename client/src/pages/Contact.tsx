@@ -123,7 +123,7 @@ export default function Contact() {
           <div className="absolute inset-0 bg-gradient-to-br from-charcoal via-charcoal to-charcoal/95" />
           <div className="absolute top-0 left-0 w-full h-full opacity-15">
             <img
-              src="/images/evening-walk_110x140cm_2020.JPG"
+              src="/images/evening-walk_110x140cm_2020.webp"
               alt=""
               className="w-full h-full object-cover"
             />
@@ -309,13 +309,17 @@ export default function Contact() {
                       <h4 className="font-label text-sm font-medium text-charcoal/50 uppercase tracking-wider mb-1">
                         Gallery Locations
                       </h4>
-                      <p className="text-charcoal">
-                        McBride Gallery: 215 Main St,<br />
-                        Annapolis, MD 21401, United States<br />
-                        <div className="w-12 h-0.5 bg-crimson mt-2 mb-2" />
-                        Stravitz Gallery: 1217 Laskin Rd,<br />
-                        Virginia Beach, VA 23451, United States
-                      </p>
+                      <div className="text-charcoal text-sm leading-relaxed">
+                        <p>
+                          <strong>McBride Gallery:</strong> 215 Main St,<br />
+                          Annapolis, MD 21401, United States
+                        </p>
+                        <div className="w-12 h-0.5 bg-crimson my-2" />
+                        <p>
+                          <strong>Stravitz Gallery:</strong> 1217 Laskin Rd,<br />
+                          Virginia Beach, VA 23451, United States
+                        </p>
+                      </div>
                     </div>
                   </div>
 
@@ -365,7 +369,7 @@ export default function Contact() {
               {/* Decorative artwork — with painterly frame */}
               <div className="relative">
                 <img
-                  src="/images/evening-walk_110x140cm_2020.JPG"
+                  src="/images/evening-walk_110x140cm_2020.webp"
                   alt="Featured artwork"
                   className="w-full rounded-sm shadow-lg"
                 />
