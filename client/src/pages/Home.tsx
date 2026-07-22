@@ -107,7 +107,7 @@ export default function Home() {
       <section className="relative min-h-[90vh] flex items-end overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/images/my-background.webp"
+            src="/images/my-background.png"
             alt=""
             className="w-full h-full object-cover"
           />
@@ -212,7 +212,7 @@ export default function Home() {
                 </div>
                 <div className="relative mt-12">
                   <img
-                    src="/images/after-the-rain-scaled.webp"
+                    src="/images/after-the-rain-scaled.jpg"
                     alt="After The Rain"
                     className="w-full aspect-[3/4] object-cover rounded-sm shadow-2xl border-2 border-crimson"
                   />
@@ -334,7 +334,7 @@ export default function Home() {
             >
               <div className="relative">
                 <img
-                  src="/images/photo_2026-07-07_18-48-58.webp"
+                  src="/images/photo_2026-07-07_18-48-58.jpg"
                   alt="Featured painting"
                   className="w-full rounded-sm shadow-2xl aspect-[9/8]"
                 />
@@ -452,7 +452,7 @@ export default function Home() {
       <section className="py-24 bg-charcoal relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <img
-            src="/images/my-background.webp"
+            src="/images/my-background.png"
             alt=""
             className="w-full h-full object-cover"
           />
@@ -494,7 +494,7 @@ export default function Home() {
             >
               <div className="relative">
                 <img
-                  src="/images/cowgirl.webp"
+                  src="/images/cowgirl.JPG"
                   alt="The artist's studio"
                   className="h-[280px] sm:h-[350px] lg:h-[450px] w-auto object-contain rounded-sm shadow-2xl"
                 />

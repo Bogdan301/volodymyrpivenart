@@ -123,7 +123,7 @@ export default function Contact() {
           <div className="absolute inset-0 bg-gradient-to-br from-charcoal via-charcoal to-charcoal/95" />
           <div className="absolute top-0 left-0 w-full h-full opacity-15">
             <img
-              src="/images/evening-walk_110x140cm_2020.webp"
+              src="/images/evening-walk_110x140cm_2020.JPG"
               alt=""
               className="w-full h-full object-cover"
             />
@@ -369,7 +369,7 @@ export default function Contact() {
               {/* Decorative artwork — with painterly frame */}
               <div className="relative">
                 <img
-                  src="/images/evening-walk_110x140cm_2020.webp"
+                  src="/images/evening-walk_110x140cm_2020.JPG"
                   alt="Featured artwork"
                   className="w-full rounded-sm shadow-lg"
                 />

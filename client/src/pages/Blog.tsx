@@ -69,7 +69,7 @@ function BlogList() {
           <div className="absolute inset-0 bg-gradient-to-br from-charcoal via-charcoal to-charcoal/95" />
           <div className="absolute bottom-0 right-0 w-full h-full opacity-20">
             <img
-              src="/images/flowers.webp"
+              src="/images/flowers.JPG"
               alt=""
               className="w-full h-full object-cover"
             />

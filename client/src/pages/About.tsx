@@ -25,7 +25,7 @@ export default function About() {
           <div className="absolute inset-0 bg-gradient-to-br from-charcoal via-charcoal to-charcoal/95" />
           <div className="absolute top-0 right-0 w-full h-full opacity-15">
             <img
-              src="/images/Freedom.webp"
+              src="/images/Freedom.jpg"
               alt=""
               className="w-full h-full object-cover"
             />
@@ -79,7 +79,7 @@ export default function About() {
             >
               <div className="relative w-full">
                 <img
-                  src="/images/IMG_4305.webp"
+                  src="/images/IMG_4305.JPG"
                   alt="The artist's studio"
                   className="w-full aspect-[8/7] rounded-sm shadow-2xl"
                 />
@@ -107,7 +107,7 @@ export default function About() {
             >
               <div className="relative">
                 <img
-                  src="/images/vladimir-piven.webp"
+                  src="/images/vladimir-piven.jpg"
                   alt="The artist's studio"
                   className="w-full object-cover rounded-sm shadow-2xl"
                 />
