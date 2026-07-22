@@ -11,7 +11,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { GalleryLightbox } from "@/components/GalleryLightbox";
 import { Pagination, scrollToSection } from "@/components/Pagination";
-import { categories, artworks, blogPosts } from "@/data/artworks";
+import { categories, artworks, blogPosts, getThumbnailUrl } from "@/data/artworks";
 import { motion } from "framer-motion";
 import { ArrowDown, ChevronRight } from "lucide-react";
 
@@ -284,7 +284,7 @@ export default function Home() {
                 <div className={`relative bg-white rounded-sm shadow-md hover:shadow-2xl transition-shadow duration-300 overflow-hidden border-t-4 ${artwork.borderColor}`}>
                   <div className={`aspect-[5/4] overflow-hidden bg-charcoal/5`}>
                     <img
-                      src={artwork.imageUrl}
+                      src={getThumbnailUrl(artwork.imageUrl)}
                       alt={artwork.title}
                       loading="lazy"
                       decoding="async"

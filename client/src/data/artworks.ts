@@ -18,6 +18,12 @@ export interface Artwork {
 
 export const categories = ["All", "Landscapes", "Animals", "Flowers", "Urban", "Marine"];
 
+export function getThumbnailUrl(imageUrl: string): string {
+  const lastDot = imageUrl.lastIndexOf(".");
+  const base = lastDot === -1 ? imageUrl : imageUrl.slice(0, lastDot);
+  return `${base}-thumb.webp`;
+}
+
 export const artworks: Artwork[] = [
   {
     id: "Freedom",
